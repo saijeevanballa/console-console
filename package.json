@@ -1,8 +1,8 @@
 {
-  "name": "console-console",
+  "name": "console-request",
   "version": "0.0.1",
   "description": "log request body and response",
-  "repository": "https://github.com/saijeevanballa/console-console",
+  "repository": "https://github.com/saijeevanballa/console-request",
   "main": "index.js",
   "scripts": {
     "start": "node ./index.js",
