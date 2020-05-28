@@ -1,0 +1,24 @@
+{
+  "name": "console-console",
+  "version": "0.0.1",
+  "description": "log request body and response",
+  "repository": "https://github.com/saijeevanballa/Merge-PDFs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sai Jeevan Balla",
+  "license": "ISC",
+  "keywords": [
+    "console",
+    "console",
+    "logger",
+    "console-console",
+    "express",
+    "nodejs",
+    "express-logger"
+  ],
+  "dependencies": {},
+  "devDependencies": {}
+}
