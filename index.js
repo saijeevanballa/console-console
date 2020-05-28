@@ -1,12 +1,6 @@
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
 let subOptions = { pretty: true, excludeKeys: [] }
 
-exports.default.consoleRequest = ({
+let consoleRequest = ({
     console: Console = true,
     stream,
     response = { ...subOptions, excludeStatus: [] },
@@ -78,4 +72,6 @@ exports.default.consoleRequest = ({
     };
 };
 
-const isObj = ele => ele?.constructor === Object;
+const isObj = ele => ele && ele.constructor === Object;
+
+module.exports = consoleRequest;

@@ -34,7 +34,7 @@ This Middleware Takes an object as an parameter and logs the request body, reque
 **Example 1**  
 *Note: it will logs all API*
 ```js
-import consoleRequest from 'console-request';
+import * as consoleRequest from 'console-request';
 import express from 'express';
 import bodyParser from 'body-parser';
 
@@ -50,7 +50,7 @@ app.use(consoleRequest);
 **Example 2**  
 *Note: it will logs Particular router*
 ```js
-import consoleRequest from 'console-request';
+import * as consoleRequest from 'console-request';
 import express from 'express';
 import bodyParser from 'body-parser';
 import * as userRouter from './user';
