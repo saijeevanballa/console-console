@@ -44,7 +44,7 @@ const app = express();
 app.use(bodyParser.json());
 
 // consoleRequest middleware logs the request 
-app.use(consoleRequest);
+app.use(consoleRequest());
 ```
 
 **Example 2**  
@@ -61,7 +61,7 @@ const app = express();
 app.use(bodyParser.json());
 
 // consoleRequest middleware logs only user Router 
-app.use("/user", consoleRequest, userRouter);
+app.use("/user", consoleRequest(), userRouter);
 ```
 
 ## Options

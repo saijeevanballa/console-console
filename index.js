@@ -2,12 +2,12 @@ let subOptions = { pretty: true, excludeKeys: [] }
 
 let consoleRequest = ({
     console: Console = true,
-    stream,
+    stream = false,
     response = { ...subOptions, excludeStatus: [] },
     request = { ...subOptions },
     header = { ...subOptions },
     message = null,
-    excludeURLs = [] }) => {
+    excludeURLs = [] } = {}) => {
 
     const getDurationInMilliseconds = (start) => {
         const NS_PER_SEC = 1e9;
