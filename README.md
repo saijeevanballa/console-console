@@ -182,9 +182,6 @@ app.use(consoleRequest({
 }));
 ```
 
-
-
-
 ## write logs to a file
 
 #### single file

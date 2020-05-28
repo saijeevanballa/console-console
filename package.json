@@ -2,7 +2,7 @@
   "name": "console-console",
   "version": "0.0.1",
   "description": "log request body and response",
-  "repository": "https://github.com/saijeevanballa/Merge-PDFs",
+  "repository": "https://github.com/saijeevanballa/console-console",
   "main": "index.js",
   "scripts": {
     "start": "node ./index.js",
