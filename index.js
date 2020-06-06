@@ -9,13 +9,6 @@ let consoleRequest = ({
     message = null,
     excludeURLs = [] } = {}) => {
 
-    const getDurationInMilliseconds = (start) => {
-        const NS_PER_SEC = 1e9;
-        const NS_TO_MS = 1e6;
-        const diff = process.hrtime(start);
-        return (diff[0] * NS_PER_SEC + diff[1]) / NS_TO_MS;
-    };
-
     return (req, res, next) => {
         excludeURLs.map(block => { if (req.originalUrl.includes(block)) { next() } });
         const start = process.hrtime();
@@ -73,5 +66,12 @@ let consoleRequest = ({
 };
 
 const isObj = ele => ele && ele.constructor === Object;
+
+const getDurationInMilliseconds = (start) => {
+    const NS_PER_SEC = 1e9;
+    const NS_TO_MS = 1e6;
+    const diff = process.hrtime(start);
+    return (diff[0] * NS_PER_SEC + diff[1]) / NS_TO_MS;
+};
 
 module.exports = consoleRequest;
