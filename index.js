@@ -10,7 +10,7 @@ let consoleRequest = ({
     excludeURLs = [] } = {}) => {
 
     return (req, res, next) => {
-        excludeURLs.map(block => { if (req.originalUrl.includes(block)) { next() } });
+        excludeURLs.forEach(block => { if (req.originalUrl.includes(block)) { next() } });
         const start = process.hrtime();
         const defaultWrite = res.write;
         const defaultEnd = res.end;
